@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fffbf7;
+
+}
+.navbar {
+    width: 100%;
+    background-color: #fffbf7; 
+  }
+
+.nav_header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+header{
+    /*display: flex;*/
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px ;
+    font-family: sans-serif;
+    height: 45px;
+    font-size: 0;
+}
+header>*{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 45px;
+}
+.ulist{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    color: #025157;
+    padding-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav_bar{
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+}
+.userActions{
+    /* width: 15%; */
+    text-align: right;
+    font-size: 14px;
+}
+/* .userActions>*{
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+.userActions a{
+    color: #67b54b;
+}
+.userActions button{
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px 12px 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.logo{
+   width: 15%;
+}
+.logo>img{
+    height: 100%;
+}
+
+.pricing{
+   margin-top: 180px;
+}
+.pricing h1{
+    color: #025157;
+    font-family: 'Alegreya Sans';
+    font-size: 60px;
+    text-align: center;
+    /* background-color: blue; */
+}
+.pricing p{
+    text-align: center;
+    padding : 1% 25% ;
+}
+
+.pricing .power{
+    font-size: 14px;
+    color: rgb(29, 58, 189);
+    font-weight: 500;
+    padding-bottom: 0;
+    margin-top: 4%;
+}
+
+.pricing form{
+    display: flex;
+    justify-content: center;
+}
+ .pricing .btn-group{
+    /* width: 30%; */
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+
+.pricing .btn-group button{
+  border: none;
+  color:#4b4b4b;
+   background-color:transparent;
+
+}
+.pricing .btn-group button.active {
+  background-color: white;
+  color:#67b54b;
+  border: 1px solid #d9d9d9; 
+  border-radius: 4px;
+}
+
+.btn-link{
+    color: #025157;
+    font-family: 'Alegreya Sans';
+    font-size: 2rem;
+}
+.faq h2{
+    text-align: center;
+    color: #025157;
+    font-family: 'Alegreya Sans';
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 2rem ;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle{
+    color: #67b54b;
+    background-color: #fff;
+    border-color: #4e555b;
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+    color: blue;
+}
+.accordion .btn-link:hover,
+.accordion .btn-link:focus {
+  text-decoration: none;
+  color: #67b54b;
+}
+
+.btn-group .btn:focus,
+.btn-group .btn:hover 
+ {
+     box-shadow:0 0 13px #67b54b;
+    border-color: blue;
+    color: #67b54b;
+}

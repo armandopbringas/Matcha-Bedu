@@ -1,0 +1,560 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fffbf7;
+
+}
+.navbar {
+    width: 100%;
+    background-color: #fffbf7; 
+  }
+
+.nav_header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+header{
+    /*display: flex;*/
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px ;
+    font-family: sans-serif;
+    height: 45px;
+    font-size: 0;
+}
+header>*{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 45px;
+}
+.ulist{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    color: #025157;
+    padding-right: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav_bar{
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+}
+.userActions{
+    /* width: 15%; */
+    text-align: right;
+    font-size: 14px;
+}
+/* .userActions>*{
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+.userActions a{
+    color: #67b54b;
+}
+.userActions button{
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px 12px 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.logo{
+   width: 15%;
+}
+.logo>img{
+    height: 100%;
+}
+main{
+    margin-top: 240px;
+}
+.principal{
+    text-align: center;
+    color: #025157;
+    font-family: 'Alegreya Sans';
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+.parrafo{
+    text-align: center;
+    color: #46484c;
+    margin-bottom: 25px;
+}
+.reg{
+    text-align: center;
+}
+
+.rank{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reg input{
+    border: 2px solid #025157;
+    border-radius: 5px;
+    padding: 6px 20px;
+    height: 41px;
+    font-size: 15px;
+    
+} 
+.try{
+ color: #fff;
+ background-color: #025157;
+ border: none;
+ padding: 12px 14px 12px 14px;
+ border-radius: 5px;
+}
+/* .try:hover{
+    box-shadow:0 0 13px #cccccc;
+} */
+
+.try:active{
+    box-shadow:0 0 20px gray ;
+}
+.picture img{
+    
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.publish{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+.text_publish{
+    flex: 1;
+    padding: 2%;
+}
+.text_publish h3{
+    text-align: center;
+}
+.text_publish .reg{
+    justify-content: center;
+    align-items: center;
+   
+}
+.how{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 20px; */
+    flex: 1;
+}
+
+.how img{
+    width: 40%;
+}
+
+.text_publish h3{
+    
+    color: #025157;
+    font-family: 'Alegreya Sans';
+    font-size: 40px;
+    line-height: 48px;
+
+}
+.text_publish p{
+    color: #343434;
+    font-size: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.text_publish .reg{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.reg p{
+    color: #025157;
+    margin-right: 18px; 
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20.625rem);
+    background-color: #025157;
+    padding: 5% 10%; 
+    margin-top: 6.875rem;
+   
+}
+
+.features .feature-card
+{
+    margin-bottom: 1.875rem;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.features .feature-card .feature-content{
+    padding: 1.875rem 1.25rem 2.5rem 2.5rem;
+    flex: 2;
+  
+}
+.features .feature-card .feature-content >*{
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.features .feature-card .feature-content img{
+    max-width: 3.125rem;
+}
+
+.features .feature-card .feature-content h3{
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+
+.features .feature-card .feature-content p{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+.features .feature-card .feature-content a{
+    
+    color: #67b54b;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.features .feature-card .feature_image{
+    /*flex: 1;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    right: -20%;
+    background-color: red;*/
+    flex: 1;
+    position: relative;
+    right: -10%;
+    width: 40%;
+    height: 80%;
+}
+
+.features .feature-card .feature_image .feature_img{
+    
+    margin-top: 0;
+    height: 100%;
+    
+}
+
+.features .feature-card .feature_image .feature_img img{
+     
+       margin-top: 0;
+       height: 100%;
+       
+}
+
+.casos_de_estudio{
+    display: flex;
+    background-color:#67b54b;
+    padding: 50px 200px;
+}
+
+.casos_de_estudio .info {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 100px;
+}
+.casos_de_estudio .info h3{
+    font-size: 50px;
+    color: #025157;
+    font-family: 'Alegreya Sans';
+    margin-bottom: 20px;
+}
+.casos_de_estudio .info p{
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+.casos_de_estudio .info .try{
+    margin-bottom: 20px;
+}
+.casos_de_estudio .info figure img{
+    width: 75%;
+}
+.cs{
+    width: 30%;
+}
+.ruleta{
+    flex: 1;
+    background-color: #fff;
+    margin-bottom: 50px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+}
+.casos_de_estudio .ruleta figure{
+    flex: 1; 
+    width: 100%;
+}
+.casos_de_estudio .ruleta figure img{
+    width: 100%;
+    max-height: 240px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.casos_de_estudio .ruleta .everly{
+    background-color: #f9da73;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%  ;
+    position: absolute;
+    bottom: 48%;
+    right: 5%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.casos_de_estudio .ruleta .mambe{
+    top: 28%;
+}
+.casos_de_estudio .ruleta .everly img{
+    width: 100%;    
+    
+}
+.casos_de_estudio .ruleta .information{
+    flex: 5;
+    padding: 20px;
+}
+.casos_de_estudio .ruleta .information .title{
+    color: #025157;
+    font-size: 18px;
+    margin-top: 0px;
+}
+.casos_de_estudio .ruleta .information h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+.casos_de_estudio .ruleta .information p{
+    margin-bottom: 20px;
+    color: #8b8b8bcc;
+    font-family: 'Open Sans', sans-serif;
+}
+.casos_de_estudio .ruleta .information .pEspecial{
+    line-height: 2;
+}
+.casos_de_estudio .ruleta .information .try{
+    width: 100%;
+
+}
+
+.how_does{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px, 100px;
+    column-gap: 50px;
+    row-gap: 30px;
+    padding: 30px 100px;
+}
+
+.how_does .head{
+    grid-column: 1/-1;
+    background-color: #fffbf7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%; 
+
+}
+.how_does .head h3{
+    font-family: 'Alegreya Sans';
+    font-size: 50px ;
+    color: #025157;
+    margin-bottom: 15px;
+}
+
+.how_does .head p{
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    color: #46484c;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.how_does .sec1{
+    position: relative;
+    border: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.how_does .sec1 img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.how_does .sec1 .icon{
+   position: absolute;
+   width: 10%;
+   left: 5%;
+   top: 5%;
+}
+.how_does .sec1 h3{
+    margin-bottom: 20px;
+    font-family: 'Alegreya Sans';
+    color:  #025157;
+    font-size: 25px;
+}
+.how_does .sec1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #46484c;
+    width: 85%;
+    margin-bottom: 20px;
+}
+.how_does .sec1 a{
+    color: #67b54b;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+@media (max-width: 800px) {
+    main{
+        margin-top: 130px;
+    }
+    /* .nav_bar, .userActions {
+       display: none;
+    } */
+    .principal{
+        font-size: 30px;
+    }
+    .parrafo{
+        font-size: 15px;
+    }
+    .rank img{
+        margin-top: 15px;
+         max-width: 80%; 
+    }
+
+    .publish{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    
+    .publish .how{
+        margin-left: 0;
+    }
+    .publish .text_publish h3{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .publish .text_publish p{
+        font-size: 15px;
+    }
+    .text_publish .reg{
+        align-items: center;
+    }
+    
+    .publish .text_publish .reg p,
+    .publish .text_publish .reg div input,
+    .publish .text_publish .reg div button
+    {
+        margin-bottom: 10px;
+    }
+     .publish .how video{
+         max-width: 100%;
+     }
+
+     .features{
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         grid-template-columns: 1fr;
+     }
+
+     .features .feature-card .feature_image {
+         display: none;
+     }
+     .casos_de_estudio{
+        flex-direction: column;
+        padding: 10% 1rem;
+        justify-content: center;
+        align-items: center;
+     }
+     .casos_de_estudio .info{
+         align-items: center;
+         justify-content: center;
+         padding: 0;
+     }
+     .casos_de_estudio .info h3{
+         text-align: center;
+         font-size: 30px;
+     }
+     .casos_de_estudio .info p{
+         font-size: 1rem;
+     }
+     .casos_de_estudio .info figure{
+         margin-top: 1rem;
+         display: flex;
+         justify-content: center;
+         margin-bottom: 2rem;
+     }
+
+     .cs{
+         width: 80%;
+     }
+
+     .how_does{
+         grid-template-columns: 1fr ;
+         grid-template-rows: 10% 1fr 1fr 1fr;
+         padding: 1rem 1rem ;
+     }
+     .how_does .head{
+          padding: 1% 0 ; 
+     }
+     .how_does .head h3{
+        font-family: 'Alegreya Sans';
+        font-size: 30px ;
+        color: #025157;
+        margin-bottom: 15px;
+    }
+    
+  }
+

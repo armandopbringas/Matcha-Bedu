@@ -1,0 +1,109 @@
+@use 'global' as * ;
+
+.blog{
+    background-color:$white;
+    max-width: unset;
+    padding: 5% 10%;
+}
+
+.title{
+    @extend %base-title;
+}
+
+.process-list{
+    margin-top: 40px;
+    margin-bottom: 36px;
+
+    .process{
+      margin-bottom: 25px;
+      display: flex;
+      & > div{
+          & > h4{
+              color: $dark-green-title;
+              margin-bottom: 0;
+              font-size: 30px;
+              font-weight: 500;
+          }
+          & > p{
+              color: $dark-green-text;
+              margin: 0;
+             }
+        }
+    
+
+      & > .icon{
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+        
+            & > img{
+                width: 100%;
+            }
+      }
+    }
+
+    & > form{
+
+        & > button{
+
+        height: auto;
+        border-radius: 8px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+        color: #fff;
+        background-color: #025157;
+        border: none;
+        }
+    }
+}
+
+.card{
+    // width: 20rem;
+    & > .card-body{
+       & > .card-title {
+           font-size: 24px;
+           color: $gray;
+       }
+       & > .metadata{
+        font-weight: 500;
+        font-size: 14px;
+        color: $ligth-gray;
+         
+           & > .category{
+            color: $ligth-green;     
+            }
+       }
+       & > .card-text{
+           color: $gray;
+           font-size: 18px;
+           line-height: 1.5em;
+           min-height: 6em;
+            
+           & > a{
+            text-decoration: underline;
+            cursor: pointer;
+           }
+       
+        }
+     .autor{
+
+        & > img{
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+        & > p{
+            margin-bottom: 0;
+            margin-left: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            color: $gray;
+            vertical-align: middle;
+        }
+
+     }
+
+    }
+}
